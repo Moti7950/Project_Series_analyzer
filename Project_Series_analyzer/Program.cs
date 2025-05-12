@@ -12,11 +12,32 @@ namespace Project_Series_analyzer
         { }
         static void reverceSeries()
         { }
-        static void getMax()
-        { }
-        static void getMin()
-        { }
-        static void getAverage()
+        static int getMax(int[] list)
+        {
+            int max = list[0];
+            foreach (int i in list)
+            {
+                if (i > max)
+                {
+                    max = i;
+                }
+            }
+            return max;
+        }
+        static int getMin(int[] list)
+        {
+            int min = list[0];
+            foreach (int i in list)
+            {
+                if (i < min)
+                {
+                    min = i;
+                }
+            }
+            return min;
+        }
+
+            static void getAverage()
         { }
         static void getLength()
         { }
@@ -28,7 +49,8 @@ namespace Project_Series_analyzer
         { }
         static void Main(string[] args)
         {
-        
+            Console.WriteLine(getMin(new int[] { 2, 4, 6, 3, 1, -6, 7 }));
+            Console.WriteLine(getMax(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
         }
     
     }

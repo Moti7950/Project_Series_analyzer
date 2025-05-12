@@ -1,0 +1,7 @@
+C:\Users\User\OneDrive - SaharPro\שולחן העבודה\לימודים\הכשרה מודעין 😁\visual_P\Project_Series_analyzer\Project_Series_analyzer\bin\Debug\Project_Series_analyzer.exe.config
+C:\Users\User\OneDrive - SaharPro\שולחן העבודה\לימודים\הכשרה מודעין 😁\visual_P\Project_Series_analyzer\Project_Series_analyzer\bin\Debug\Project_Series_analyzer.exe
+C:\Users\User\OneDrive - SaharPro\שולחן העבודה\לימודים\הכשרה מודעין 😁\visual_P\Project_Series_analyzer\Project_Series_analyzer\bin\Debug\Project_Series_analyzer.pdb
+C:\Users\User\OneDrive - SaharPro\שולחן העבודה\לימודים\הכשרה מודעין 😁\visual_P\Project_Series_analyzer\Project_Series_analyzer\obj\Debug\Project_Series_analyzer.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - SaharPro\שולחן העבודה\לימודים\הכשרה מודעין 😁\visual_P\Project_Series_analyzer\Project_Series_analyzer\obj\Debug\Project_Series_analyzer.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - SaharPro\שולחן העבודה\לימודים\הכשרה מודעין 😁\visual_P\Project_Series_analyzer\Project_Series_analyzer\obj\Debug\Project_Series_analyzer.exe
+C:\Users\User\OneDrive - SaharPro\שולחן העבודה\לימודים\הכשרה מודעין 😁\visual_P\Project_Series_analyzer\Project_Series_analyzer\obj\Debug\Project_Series_analyzer.pdb
