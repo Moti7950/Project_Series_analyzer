@@ -10,8 +10,13 @@ namespace Project_Series_analyzer
     {
         static void getSeries()
         { }
-        static void reverceSeries()
-        { }
+        static void ReverceSeries(int[] list)
+        { 
+            for (int i = getLength(list) -1; i >= 0 ; i--)
+            {
+                Console.Write(list[i] +" ");  
+            }
+        }
         static int getMax(int[] list)
         {
             int max = list[0];
@@ -37,21 +42,60 @@ namespace Project_Series_analyzer
             return min;
         }
 
-            static void getAverage()
-        { }
-        static void getLength()
-        { }
-        static void getSumOfTheSeries()
-        { }
+        static int getAverage(int[] list)
+        { 
+            int leni = getLength(list);
+            int sum = getSumOfTheSeries(list);
+            int average = sum / leni;
+            return average;
+
+        }
+        static int getLength(int[] list)
+        {
+            int leni = 0;
+            foreach (int i in list)
+            {
+                if (i != 0)
+                {
+                    leni++;
+                }
+            }
+            return leni;
+        }
+        static int getSumOfTheSeries(int[] list)
+        {
+            int sum = 0;
+                foreach ( int i in list)
+                {
+                    if (i != 0)
+                    {
+                        sum += i;
+                    }
+                }
+            return sum;
+        }
         static void orgivingSeries()
-        { }
+        { 
+            
+        }
         static void Exit()
-        { }
+        {
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine(getMin(new int[] { 2, 4, 6, 3, 1, -6, 7 }));
-            Console.WriteLine(getMax(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
+
+            //Console.WriteLine(getMin(new int[] { 2, 4, 6, 3, 1, -6, 7 }));
+            //Console.WriteLine(getMax(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
+            //Console.WriteLine(getLength(new int[] { }));
+            //Console.WriteLine(getSumOfTheSeries(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
+            //Console.WriteLine(getSumOfTheSeries(new int[] {}));
+            //Console.WriteLine(getAverage(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
+            int[] x = { 2, 4, 9, 3, 1, -6, 7 };
+            ReverceSeries(x);
+
+
         }
     
     }
 }
+
