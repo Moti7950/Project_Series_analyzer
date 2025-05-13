@@ -42,12 +42,12 @@ namespace Project_Series_analyzer
              return check;
         }
         //a
-        static void getSeries()
-        { 
-            
+        static void getInput()
+        {
+           
         }
         //b
-        static void setSeries(int[] list)
+        static void getSeries(int[] list)
         {
             foreach (int i in list)
             {
@@ -149,9 +149,6 @@ namespace Project_Series_analyzer
         { 
             
         }
-        static void Exit()
-        {
-        }
         static void Main(string[] args)
         {
 
@@ -161,11 +158,64 @@ namespace Project_Series_analyzer
             //Console.WriteLine(getSumOfTheSeries(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
             //Console.WriteLine(getSumOfTheSeries(new int[] {}));
             //Console.WriteLine(getAverage(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
-            int[] x = { -8,2, 4, 9,-10, 3, 1, -6 };
+            //int[] x = { -8,2, 4, 9,-10, 3, 1, -6 };
             //ReverceSeries(x);
             //List<string> list = new List<string> { "1","2","2"};
             //checkNumber(list.ToArray());
-            sortSeries(x);
+            //sortSeries(x);
+
+            Console.WriteLine("Please enter ");
+  
+            string input = Console.ReadLine();
+            bool boli = true;
+            do {
+                int[] x = new int[] { 2, 4, 9, 3, 1, -6, 7 };
+                switch (input)
+                {
+                    case "a":
+                        getInput();
+                        break;
+
+                    case "b":
+                        getSeries(x);
+                        break;
+
+                    case "c":
+                        ReverceSeries(x);
+                        break;
+
+                    case "d":
+                        sortSeries(x);
+                        break;
+
+                    case "e":
+                        Console.WriteLine(getMax(x));
+                        break;
+
+                    case "f":
+                        Console.WriteLine(getMin(x));
+                        break;
+
+                    case "g":
+                        Console.WriteLine(getAverage(x));
+                        break;
+
+                    case "h":
+                        Console.WriteLine(getLength(x));
+                        break;
+
+                    case "i":
+                        Console.WriteLine(getSumOfTheSeries(x));
+                        break;
+
+                    case "j":
+                        boli = false;
+                        Console.WriteLine("Baybay :) ");
+                        break;
+                }
+            }
+            while (boli == true);
+
         }
     
     }
