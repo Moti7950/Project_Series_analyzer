@@ -53,6 +53,7 @@ namespace Project_Series_analyzer
             {
                 Console.Write(i + " ");
             }
+            Console.WriteLine();
         }
         //c
         static void ReverceSeries(int[] list)
@@ -61,6 +62,7 @@ namespace Project_Series_analyzer
             {
                 Console.Write(list[i]+" ");  
             }
+            Console.WriteLine();
         }
         //d
         static void sortSeries(int[] list)
@@ -81,6 +83,7 @@ namespace Project_Series_analyzer
             {
                 Console.Write(i + " ");
             }
+            Console.WriteLine();
 
         }
         //e
@@ -152,23 +155,21 @@ namespace Project_Series_analyzer
         static void Main(string[] args)
         {
 
-            //Console.WriteLine(getMin(new int[] { 2, 4, 6, 3, 1, -6, 7 }));
-            //Console.WriteLine(getMax(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
-            //Console.WriteLine(getLength(new int[] { }));
-            //Console.WriteLine(getSumOfTheSeries(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
-            //Console.WriteLine(getSumOfTheSeries(new int[] {}));
-            //Console.WriteLine(getAverage(new int[] { 2, 4, 9, 3, 1, -6, 7 }));
-            //int[] x = { -8,2, 4, 9,-10, 3, 1, -6 };
-            //ReverceSeries(x);
-            //List<string> list = new List<string> { "1","2","2"};
-            //checkNumber(list.ToArray());
-            //sortSeries(x);
-
-            Console.WriteLine("Please enter ");
-  
-            string input = Console.ReadLine();
             bool boli = true;
             do {
+                Console.WriteLine(
+                        "a - Enter new series\n" +
+                        "b - Show series\n" +
+                        "c - Reverse series\n" +
+                        "d - Sort series\n" +
+                        "e - Max value\n" +
+                        "f - Min value\n" +
+                        "g - Average\n" +
+                        "h - Series length\n" +
+                        "i - Sum of series\n" +
+                        "j - Exit");
+                string input = Console.ReadLine();
+                
                 int[] x = new int[] { 2, 4, 9, 3, 1, -6, 7 };
                 switch (input)
                 {
